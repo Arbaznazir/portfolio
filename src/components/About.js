@@ -12,7 +12,7 @@ export default function About() {
           </h2>
           <div className="mt-2 w-16 h-1 mx-auto bg-indigo-600 dark:bg-indigo-400 rounded"></div>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-300">
-            Arbaz Nazir Lohar
+            Arbaz Nazir
           </p>
         </div>
 
@@ -21,7 +21,7 @@ export default function About() {
             <div className="relative w-64 h-64 mb-8 mx-auto lg:mx-0 overflow-hidden rounded-full shadow-xl border-4 border-indigo-500 transform transition-all duration-500 hover:scale-105">
               <Image
                 src={profileImage}
-                alt="Arbaz Nazir Lohar"
+                alt="Arbaz Nazir"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center 30%" }}
                 className="transition-all duration-500 hover:scale-110"
@@ -33,15 +33,14 @@ export default function About() {
               Who I Am
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-              I&apos;m a Master&apos;s student pursuing MCA from the University
-              of Kashmir (South Campus) with a passion for software development
-              and problem-solving. My background includes experience in team
-              management, healthcare, and technical support.
+              Detail-oriented and passionate Power BI Developer with hands-on experience in data modeling,
+              visualization, and report automation. Skilled in transforming raw data into meaningful business insights
+              using Power BI, DAX, and SQL.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I&apos;m currently working on a social media application designed
-              to limit addiction by restricting daily usage and filtering
-              inappropriate content using AI models.
+              Proven ability to collaborate across teams, solve complex data challenges,
+              and deliver impactful dashboards. Eager to contribute to innovative projects and grow as a data
+              professional in a dynamic, fast-paced environment.
             </p>
           </div>
 
@@ -52,26 +51,26 @@ export default function About() {
             <ul className="space-y-4">
               <li className="border-l-4 border-indigo-500 pl-4 py-2">
                 <div className="text-xl font-semibold text-gray-800 dark:text-white">
-                  Masters in Computer Applications (MCA)
+                  MCA - Master of Computer Applications
                 </div>
                 <div className="text-gray-600 dark:text-gray-300">
-                  University of Kashmir (South Campus) | Awaiting final results
+                  2023-2025
                 </div>
               </li>
               <li className="border-l-4 border-indigo-500 pl-4 py-2">
                 <div className="text-xl font-semibold text-gray-800 dark:text-white">
-                  Bachelor&apos;s Degree
+                  BA+Computer Science
                 </div>
                 <div className="text-gray-600 dark:text-gray-300">
-                  Govt Degree College Tral | CGPA: 71.1 | 2022
+                  2019-2023
                 </div>
               </li>
               <li className="border-l-4 border-indigo-500 pl-4 py-2">
                 <div className="text-xl font-semibold text-gray-800 dark:text-white">
-                  Health Sanitary Inspector
+                  ITI
                 </div>
                 <div className="text-gray-600 dark:text-gray-300">
-                  ITI | 78.5% | 2020
+                  2021
                 </div>
               </li>
             </ul>
@@ -85,41 +84,44 @@ export default function About() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h4 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
-                AR Medical Agency
+                Kupos.cl
               </h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                Team Manager | 2022 - 2023
+                Data Engineer & Power BI Analyst | Jan 2025 - Current
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                Worked as Team Manager and kept records and flow of medicines
-                and money. Organized and managed the team to maintain sales,
-                monitor salaries, and handle accounting.
+                Working as a Data Engineer and Analyst/Power BI Developer.
+                Use Power BI to show the prices and differences between normal and dynamic pricing.
+                Create data insights to analyze pricing strategies and support business decisions.
+                Automate CSV generation and integrate data from MongoDB into Power BI dashboards.
               </p>
             </div>
 
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h4 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
-                Pampora Hospital
+                AR Medical Agency (Kashmir)
               </h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                Sanitary Inspector and Medical Trainee | 2021
+                Sales Insights Analyst | Mar 2022 - Apr 2024 | Remote
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                Learned hospital sanitation protocols and worked as a helper in
-                the casualty section.
+                Used Power BI to display monthly sales trends and monitor outgoing medicine inventory.
+                Built dashboards that tracked real-time stock movement, daily sales, and category-wise demand.
+                Provided data-driven insights on product performance, revenue, and purchase patterns.
               </p>
             </div>
 
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <h4 className="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-2">
-                Reliance Jio
+                Sub-District Hospital Pampora
               </h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                Home Service Engineer | 2025
+                Sanitary Inspector and Medical Trainee | Jun 2021 - Aug 2021
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                Worked as an Engineer for installing Jio Air Fiber and
-                maintaining user satisfaction.
+                Assisted doctors and nurses in outpatient care, patient monitoring, and case documentation.
+                Observed clinical procedures, including wound dressing, injections, and OPD management.
+                Supported public health officers in maintaining sanitation standards in community areas.
               </p>
             </div>
           </div>

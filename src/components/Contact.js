@@ -101,7 +101,7 @@ export default function Contact() {
       title: "Email",
       value: "arbaznazir4@gmail.com",
       link: "mailto:arbaznazir4@gmail.com",
-      icon: "✉️",
+      icon: "@",
       color: "from-blue-500 to-indigo-600",
       description:
         "Send me an email anytime. I&apos;ll try to respond as soon as possible.",
@@ -111,7 +111,7 @@ export default function Contact() {
       title: "LinkedIn",
       value: "linkedin.com/in/arbaz-nazir1",
       link: "https://linkedin.com/in/arbaz-nazir1",
-      icon: "💼",
+      icon: "IN",
       color: "from-indigo-500 to-purple-600",
       description: "Connect with me professionally on LinkedIn.",
     },
@@ -120,7 +120,7 @@ export default function Contact() {
       title: "Social Media",
       value: "Find me on social platforms",
       link: "#",
-      icon: "📱",
+      icon: "#",
       color: "from-rose-500 to-pink-600",
       description:
         "Follow me to stay updated with my latest work and projects.",
@@ -172,18 +172,32 @@ export default function Contact() {
 
         {/* Contact Methods */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mb-16">
-          {contactMethods.map((method, index) => (
-            <div
-              key={method.id}
-              className={`bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-2xl ${
-                isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
-              }`}
-              style={{
-                transitionDelay: `${index * 150}ms`,
-              }}
-            >
+          {contactMethods.map((method, index) => {
+            const CardWrapper = method.title === "Social Media" ? "div" : "a";
+            const cardProps = method.title === "Social Media" 
+              ? {} 
+              : {
+                  href: method.link,
+                  target: method.title === "LinkedIn" ? "_blank" : "_self",
+                  rel: method.title === "LinkedIn" ? "noopener noreferrer" : undefined,
+                  className: "block"
+                };
+            
+            return (
+              <CardWrapper
+                key={method.id}
+                {...cardProps}
+              >
+                <div
+                  className={`bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-2xl ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-10"
+                  }`}
+                  style={{
+                    transitionDelay: `${index * 150}ms`,
+                  }}
+                >
               <div
                 className={`bg-gradient-to-r ${method.color} p-6 flex items-center justify-between`}
               >
@@ -257,8 +271,10 @@ export default function Contact() {
                   </div>
                 )}
               </div>
-            </div>
-          ))}
+                </div>
+              </CardWrapper>
+            );
+          })}
         </div>
 
         {/* Contact Form Section */}

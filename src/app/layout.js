@@ -2,9 +2,9 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Arbaz Nazir | MCA Student & Developer",
+  title: "Arbaz Nazir | Power BI Developer & Data Engineer",
   description:
-    "Arbaz Nazir's personal portfolio showcasing skills in Python, Java, Web Development, and AI/ML",
+    "Arbaz Nazir's portfolio - Power BI Developer and Data Engineer skilled in data modeling, visualization, DAX, SQL, and business intelligence solutions",
 };
 
 export default function RootLayout({ children }) {

@@ -15,10 +15,10 @@ export default function Hero() {
 
     const textElement = typingTextRef.current;
     const roles = [
-      "Developer",
-      "Problem Solver",
+      "Power BI Developer",
+      "Data Engineer",
+      "Data Analyst",
       "MCA Student",
-      "ML and AI Learner",
     ];
     let roleIndex = 0;
     let charIndex = 0;
@@ -73,7 +73,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mt-0 md:mt-6">
           <div className="md:w-1/2 text-center md:text-left order-2 md:order-1 mt-4 md:mt-0">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              <span className="block">Hello, I&apos;m Arbaz Nazir Lohar</span>
+              <span className="block">Hello, I&apos;m Arbaz Nazir</span>
               <span className="block text-indigo-600 dark:text-indigo-400 mt-2">
                 <span
                   ref={typingTextRef}
@@ -86,10 +86,15 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 mx-auto md:mx-0 text-xl text-gray-500 dark:text-gray-300">
-              MCA student passionate about creating beautiful and functional
-              applications. Currently working on a social media application with
-              AI content moderation.
+              Detail-oriented and passionate Power BI Developer with hands-on experience in data modeling,
+              visualization, and report automation. Skilled in transforming raw data into meaningful business insights
+              using Power BI, DAX, and SQL.
             </p>
+
+            <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+              <p>Email: arbaznazir4@gmail.com | Phone: +(91)9541610059</p>
+              <p>Website: arbaznazir.in | LinkedIn: linkedin.com/in/arbaz-nazir1</p>
+            </div>
 
             <div className="mt-10 flex justify-center md:justify-start gap-4">
               <a
@@ -114,7 +119,7 @@ export default function Hero() {
                 <div className="w-full h-full relative">
                   <Image
                     src={heroImage}
-                    alt="Arbaz Nazir Lohar"
+                    alt="Arbaz Nazir"
                     fill
                     sizes="(max-width: 640px) 14rem, (max-width: 768px) 16rem, 20rem"
                     style={{ objectFit: "cover", objectPosition: "center 25%" }}
